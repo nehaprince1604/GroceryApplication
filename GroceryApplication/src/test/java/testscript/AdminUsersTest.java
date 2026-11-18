@@ -50,6 +50,10 @@ public class AdminUsersTest extends Base{
 		
 		
 		ap.clickBlueSearchButton().enterUsernameSearch("neha").clickRedSearchButton();
+		String actual = ap.searchTableForNewAdminUser();
+		String expected = "neha";
+		Assert.assertEquals(actual, expected, Constant.SEARCHNEWADMINUSERERROR);
+		
 		
 		
 	}

@@ -26,6 +26,7 @@ public class AdminUsersPage {
 	   @FindBy(xpath ="//input[@id='un']") WebElement searchusername;
 	   @FindBy(xpath ="//button[@name='Search']") WebElement redsearch;
 	   @FindBy(xpath ="//div[@class='alert alert-success alert-dismissible']") WebElement alert;//for assertion
+	   @FindBy(xpath ="//table[@class=\"table table-bordered table-hover table-sm\"]/tbody/tr[1]/td[1]") WebElement table;//for assertion
 	   
 	   
 	   public AdminUsersPage clickNewButton() {
@@ -65,6 +66,8 @@ public class AdminUsersPage {
 	   public String verifyAddUserAlertisDisplayed() {
 		   return alert.getText();
 	   }
+	   public String searchTableForNewAdminUser() {
+		   return table.getText();	   }
 	   
 	   
 }

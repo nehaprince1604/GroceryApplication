@@ -2,6 +2,7 @@ package pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
@@ -21,6 +22,7 @@ public class CategoryPage {
 	   @FindBy(xpath ="//input[@name='un']") WebElement searchcategory;
 	   @FindBy(xpath ="//button[@name='Search']") WebElement redsearch;
 	   @FindBy(xpath ="//div[@class='alert alert-success alert-dismissible']") WebElement alert;//for assertion
+	   @FindBy(xpath ="//table[@class=\"table table-bordered table-hover table-sm\"]/tbody/tr/td[1]") WebElement table;//for assertion
 	   
 	   public CategoryPage clickNewButton() {
 			  newbutton.click();
@@ -39,7 +41,8 @@ public class CategoryPage {
 		   return this;
 	   }
 	   public CategoryPage clickSaveButton() {
-			  savebutton.click();
+		   Actions action=new Actions(driver);
+		   action.click(savebutton).perform();
 			  return this;
 		  }
 	   public CategoryPage clickBlueSearchButton() {
@@ -57,5 +60,8 @@ public class CategoryPage {
 	   public String verifyCategoryAlertisDisplayed() {
 		   return alert.getText();
 	   }
+	   public String searchTableForNewCategory() {
+		   return table.getText();	   }
+	   
 	   
 }

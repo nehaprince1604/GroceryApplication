@@ -10,8 +10,10 @@ public class Constant {
  public static final String INVALIDPASSWORDERROR = "User is unable to login with valid username and invalid password";
  public static final String INVALIDUSERNAMEERROR = "User is unable to login with invalid username and valid password";
  public static final String NEWADMINUSERADDERROR = "Unable to add new admin user";
+ public static final String SEARCHNEWADMINUSERERROR = "Unable to find new admin user";
  public static final String NEWDELIVERYBOYADDERROR = "Unable to add new delivery boy";
  public static final String NEWCATEGORYBADDERROR = "Unable to add new category";
+ public static final String SEARCHCATEGORYERROR = "Unable to find new category";
  public static final String LOGOUTERROR = "Unable to add logout";
  
 }

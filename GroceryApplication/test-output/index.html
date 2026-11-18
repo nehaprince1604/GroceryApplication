@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\HP\eclipse-workspace\GroceryApplication\testng.xml</span>
+                    <span>C:\Users\HP\git\GroceryApplication\GroceryApplication\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -129,30 +129,14 @@
                   <a name="verifyWhetherUserIsAbleToAddCategory">
                   </a> <!-- verifyWhetherUserIsAbleToAddCategory -->
                   <span class="method-name">verifyWhetherUserIsAbleToAddCategory</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (334, 819)
-  (Session info: chrome=157.0.8103.78)
-Build info: version: &apos;4.46.0&apos;, revision: &apos;df5a634 df5a6341cbb5f8f06b836bd595752775627c80dc&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.12.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a0b219dcc18ea0e0febb02fb34508cdf, clickElement {id=f.813C3B5AD2EB37B023EE6EEE287C88C8.d.5649391343C534A4E1362293FC216165.e.501}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 157.0.8103.78, chrome: {chromedriverVersion: 157.0.8103.78 (4b3d0dabb825..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57826}, goog:processID: 11520, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57826/devtoo..., se:cdpVersion: 157.0.8103.78, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10...., webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (a0b219dcc18ea0e0febb02fb34508cdf)] -&gt; xpath: //button[@name=&apos;create&apos;]]
-Session ID: a0b219dcc18ea0e0febb02fb34508cdf
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:626)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:225)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
-	at pages.CategoryPage.clickSaveButton(CategoryPage.java:38)
-	at testscript.CategoryTest.verifyWhetherUserIsAbleToAddCategory(CategoryTest.java:34)
+                  <div class="stack-trace">java.lang.AssertionError: Unable to add new category expected [×
+Alert!
+Category Created Successfully] but found [�
+Alert!
+Category Created Successfully]
+	at testscript.CategoryTest.verifyWhetherUserIsAbleToAddCategory(CategoryTest.java:37)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 27 stack frames
+... Removed 30 stack frames
 </div> <!-- stack-trace -->
                   <em>
 (user is trying to add category)                  </em>
@@ -163,7 +147,7 @@ Session ID: a0b219dcc18ea0e0febb02fb34508cdf
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\HP\eclipse-workspace\GroceryApplication\testng.xml</span>
+            <span class="header-content">C:\Users\HP\git\GroceryApplication\GroceryApplication\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -224,12 +208,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verifyWhetherUserIsAbleToAddCategory')
 data.setCell(0, 2, 'testscript.CategoryTest')
-data.setCell(0, 3, 7608);
+data.setCell(0, 3, 11869);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 7 seconds</span>
+              <span class="suite-total-time">Total running time: 11 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -271,11 +255,11 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">verifyWhetherUserIsAbleToAddCategory</span>
-                <span class="method-start">10903 ms</span>
+                <span class="method-start">8983 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser([TestResult name=verifyWhetherUserIsAbleToAddCategory status=FAILURE method=CategoryTest.verifyWheth...)</span>
-                <span class="method-start">18543 ms</span>
+                <span class="method-start">20897 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
